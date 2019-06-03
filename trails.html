@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Happy Trails</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ledger|Nixie+One&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .slide {
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            opacity: 0;
+            z-index: 1: -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            transition: opacity 1s;
+            /*    font-size: 3em;*/
+            /*    box-sizing: border-box;*/
+            background: #333;
+            color: #fff;
+            padding: 0px;
+            padding-top: 25%;
+            position: absolute;
+        }
+
+        .showing {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .slide:nth-of-type(1) {
+            /*    background: red;*/
+            background: url("assets/featuredTrails/cloudsRest.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .slide:nth-of-type(2) {
+            /*    background: orange;*/
+            background: url("assets/featuredTrails/halfdome.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .slide:nth-of-type(3) {
+            /*    background: green;*/
+            background: url("assets/featuredTrails/glacierPoint.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .slide:nth-of-type(4) {
+            /*    background: green;*/
+            background: url("assets/featuredTrails/vernalFalls.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .mainBody {
+            padding-top: 25%;
+        }
+
+        .trailTitle {
+            position: absolute;
+            width: 100%;
+            z-index: 900;
+            text-align: center;
+            /*            background-color: red;*/
+            padding: 0px;
+            margin-top: 10%;
+        }
+
+        .trailTitle h1 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 0.5em;
+            font-size: 100px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sideImage {
+            padding: 15px;
+        }
+
+        .sideImage .image {
+            height: 300px;
+            width: 100%;
+            background-image: url(assets/featuredTrails/cloudsRestThree.jpg);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 25px;
+        }
+
+        .main {
+            padding-left: 25px;
+        }
+
+        .mainBody {
+            display: block;
+        }
+
+
+        .featureTrails {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+
+        .gallery {
+            width: 90%;
+            margin: 0px auto;
+            /*            background: red;*/
+            height: 250px;
+        }
+
+        .trail {
+            height: 200px;
+            width: 22.5%;
+            float: left;
+            margin: 1.25%;
+            text-align: center
+        }
+
+        .tImageOne {
+            /*    background: red;*/
+            background: url("assets/featuredTrails/cloudsRest.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+            height: 90%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .tImageTwo {
+            /*    background: orange;*/
+            background: url("assets/featuredTrails/halfdome.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+            height: 90%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .tImageThree {
+            /*    background: green;*/
+            background: url("assets/featuredTrails/glacierPoint.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+            height: 90%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .tImageFour {
+            /*    background: green;*/
+            background: url("assets/featuredTrails/vernalFalls.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+            height: 90%;
+            width: 100%;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="top" style="height: 1px: width: 100%; background-color: white; "></div>
+
+    <div id="menuArea">
+        <input type="checkbox" id="menuToggle"></input>
+
+        <label for="menuToggle" class="menuOpen">
+            <div class="open"></div>
+        </label>
+
+        <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+                <ul>
+                    <li class="menuLogo"><a href="index.html"><img src="assets/imgs/happyTrailsLogoWhite.png" alt="happy trails logo"></a></li>
+                    <li><a href="trails.html">top trails</a></li>
+                    <li><a href="cloudsrest.html">clouds rest</a></li>
+                    <li><a href="glacierpoint.html">glacier point</a></li>
+                    <li><a href="halfdown.html">half down</a></li>
+                    <li><a href="vernalfalls.html">vernal falls</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="container-slides">
+        <div class="slide showing"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+    <div class="trailTitle">
+        <h1>TAKE A HIKE</h1>
+    </div>
+
+    <div class="mainBody ">
+        <div class="featureTrails">
+            <h2 style="text-align: center">featured trails</h2>
+            <p style="text-align: center;">The United States boasts nearly 1 million square miles of public lands—and, according to a 2015 report from the American Hiking Society, more than 235,000 miles of hiking trails snake through forests, ascend mountains, traverse prairies, hug lakes and more on state and federal lands. <br> <br>
+
+                But none of that happens in a vacuum. For decades, volunteers, nonprofit organizations and government agencies have teamed up to build, maintain and preserve trails. That work continues today, with crews working year-round to ensure hikers don’t encounter overgrowth, washed-out trails, invasive species and other elements that might wreak havoc on sensitive ecosystems. <br> <br>
+
+                So with National Trails Day coming up on June 1, 2019, there’s only one way to mark the occasion: Lace up your boots, pack the 10 essentials and hit the trails.</p>
+        </div>
+        <div class="gallery">
+            <a href="cloudsrest.html">
+                <div class="trail">
+                    <div class="tImageOne"></div>
+                    <div class="tTitle">
+                        <h3>Clouds Rest</h3>
+                    </div>
+                </div>
+            </a><a href="halfdown.html">
+                <div class="trail">
+                    <div class="tImageTwo"></div>
+                    <div class="tTitle">
+                        <h3>Half Dome</h3>
+                    </div>
+                </div>
+            </a><a href="glacierpoint.html">
+                <div class="trail">
+                    <div class="tImageThree"></div>
+                    <div class="tTitle">
+                        <h3>Glacier Point</h3>
+                    </div>
+                </div>
+            </a><a href="vernalfalls.html">
+                <div class="trail">
+                    <div class="tImageFour"></div>
+                    <div class="tTitle">
+                        <h3>Vernal Falls</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="mainFooter">
+        <div class="oneHalf" style="padding-left: 10%;">
+            <h3>about happy trails</h3>
+            <p>Happy trails searches for the best hiking experiences across the country from east to west! Our goal is the build a natonwide community of adventures that would like to share their journeys, stories and memories with other travelers. The world is a large place and no one should miss out in all its vast beauty and mystery.</p>
+        </div>
+        <div class="oneQuarter" style="padding-left: 10%;">
+            <h3>support</h3>
+            <ul>
+                <li><a href="#top">Back to Top</a></li>
+<!--                <li><a href="contact.html">Contact Info</a></li>-->
+                <li><a href="assets/editable/happTrailsLogo.pdf" download>Download Logo</a></li>
+            </ul>
+        </div>
+        <div class="oneQuarter">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="extraFooter">
+        <form action="#" method="post" name="subscribe">
+            <div class="header">
+                <h4>subscribe</h4>
+                <hr>
+            </div>
+            <div class="description">
+                <p>Subscribe to our newsletter for special offers and other bullshit i dunno.</p>
+            </div>
+            <div class="input">
+                <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+                <input type="submit" class="button" id="submit" value="SIGN UP">
+            </div>
+        </form>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
