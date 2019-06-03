@@ -124,7 +124,7 @@ div {
     font-size: 54px;
     text-align: center;
     padding-bottom: 20px;
-    margin-top: -170px;
+    margin-top: -300px;
 }
 
 .menu ul {
@@ -141,6 +141,11 @@ div {
     padding: 10px 0;
 }
 
+.menuLogo img {
+    width: 15%;
+    height: auto;
+}
+
 .menu ul li a:hover {
     color: #ed1c24;
 }
@@ -148,6 +153,12 @@ div {
 .menu ul li:hover {
     background: white;
 }
+
+
+.menuLogo:hover {
+    background: rgba(0,0,0,0) !important;
+}
+
 
 .menuEffects {
     opacity: 0;
@@ -338,7 +349,7 @@ div {
     line-height: 24px;
     width: 100%;
     float: left;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
 }
 
 .mainFooter div {
@@ -371,7 +382,7 @@ div {
 .extraFooter {
     position: fixed;
     z-index: -1;
-    height: 300px;
+    height: 350px;
     width: 100%;
     /*    background: yellow;*/
     background-image: url(../assets/imgs/footerBackgroundTwo.jpg);
@@ -389,12 +400,14 @@ div {
     font-size: 35px;
     letter-spacing: 5px;
     text-align: center;
+    margin-top: 70px;
 }
 
 .header h4 {
     color: whitesmoke;
     text-align: center;
     margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .description {
