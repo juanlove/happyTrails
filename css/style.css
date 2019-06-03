@@ -268,10 +268,13 @@ div {
     background-size: 100% auto;
 }
 
+/* STRUCTURE */
+
 .mainBody {
     width: 100%;
     background-color: white;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     padding: 0px;
     padding-top: 56.25%;
     position: relative;
@@ -279,8 +282,6 @@ div {
     box-sizing: inherit;
 
 }
-
-/* STRUCTURE */
 
 .oneWhole {
     width: 100%;
