@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Happy Trails</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Ledger|Nixie+One&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .slide {
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            opacity: 0;
+            z-index: 1: -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            transition: opacity 1s;
+            /*    font-size: 3em;*/
+            /*    box-sizing: border-box;*/
+            background: #333;
+            color: #fff;
+            padding: 0px;
+            padding-top: 25%;
+            position: absolute;
+        }
+
+        .showing {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .slide:nth-of-type(1) {
+            /*    background: red;*/
+            background: url("assets/featuredTrails/halfdome.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .slide:nth-of-type(2) {
+            /*    background: orange;*/
+            background: url("assets/featuredTrails/halfdomeTwo.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: center center;
+        }
+
+        .slide:nth-of-type(3) {
+            /*    background: green;*/
+            background: url("assets/featuredTrails/halfdomeThree.jpg") no-repeat;
+            background-attachment: inherit;
+            background-size: 100% auto;
+            background-position: bottom center;
+        }
+
+        .mainBody {
+            padding-top: 25%;
+        }
+
+        .trailTitle {
+            position: absolute;
+            width: 100%;
+            z-index: 900;
+            text-align: center;
+            /*            background-color: red;*/
+            padding: 0px;
+            margin-top: 10%;
+        }
+
+        .trailTitle h1 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 0.5em;
+            font-size: 100px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .sideImage {
+            padding: 15px;
+        }
+
+        .sideImage .image {
+            height: 300px;
+            width: 100%;
+            background-image: url(assets/featuredTrails/halfdomeFour.jpg);
+            background-position: center center;
+            background-size: cover;
+            border-radius: 25px;
+        }
+
+        .main {
+            padding-left: 25px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="top" style="height: 1px: width: 100%; background-color: white; "></div>
+
+    <div id="menuArea">
+        <input type="checkbox" id="menuToggle"></input>
+
+        <label for="menuToggle" class="menuOpen">
+            <div class="open"></div>
+        </label>
+
+        <div class="menu menuEffects">
+            <label for="menuToggle"></label>
+            <div class="menuContent">
+                <ul>
+                    <li class="menuLogo"><a href="index.html"><img src="assets/imgs/happyTrailsLogoWhite.png" alt="happy trails logo"></a></li>
+                    <li><a href="trails.html">top trails</a></li>
+                    <li><a href="cloudsrest.html">clouds rest</a></li>
+                    <li><a href="glacierpoint.html">glacier point</a></li>
+                    <li><a href="halfdown.html">half down</a></li>
+                    <li><a href="vernalfalls.html">vernal falls</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="container-slides">
+        <div class="slide showing"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+    <div class="trailTitle">
+        <h1>Half Dome</h1>
+    </div>
+
+    <div class="mainBody">
+        <div class="oneThird">
+            <h3>description</h3>
+            <p>At 8,836', this massive granite monolith rises close to 5,000' from the valley floor. It is a sight to behold from anywhere in the park, but the hike to the top of this rock is one for the ages. Between 14-16 miles long, this is a strenuous, long day, but the rewards are indescribable. <br> <br>
+
+                Half Dome is undoubtedly a symbol of Yosemite and a great challenge to many hikers. Despite an 1865 statement announcing that the formation was "perfectly inaccessible, being probably the only one of the prominent points about the Yosemite which never has been, and never will be, trodden by human foot," George Anderson made it to the summit in 1875, while laying the foundation for the current cable route in the process. <br> <br>
+
+                Today, thousands of visitors make it to the summit. For many of these visitors, the journey is an exciting, strenuous hike; for an unlucky few, the journey becomes more of an adventure than they originally anticipated. Because of this, park rangers are called to assist hundreds of visitors on the Half Dome Trail each summer. Many of these emergencies could have been prevented with proper preparation. <br> <br>
+
+                The majority of the hike to Half Dome is an experience into wilderness, and, while that comes with inherent risk, there are a number of things you can do to stay safe and help ensure a good time along the way..</p>
+        </div>
+        <div class="oneThird">
+            <h3>highlights</h3>
+            <p>
+                <b>All-Day Hike:</b> The Half Dome hike from the Happy Isles parking area is around 15 miles, roundtrip. <br> <br>
+
+                <b>Gem Type:</b> Rock Formation
+
+            </p>
+            </p>
+        </div>
+        <div class="oneThird sideImage">
+            <div class="image"></div>
+        </div>
+    </div>
+
+    <div class="mainFooter">
+        <div class="oneHalf" style="padding-left: 10%;">
+            <h3>about happy trails</h3>
+            <p>Happy trails searches for the best hiking experiences across the country from east to west! Our goal is the build a natonwide community of adventures that would like to share their journeys, stories and memories with other travelers. The world is a large place and no one should miss out in all its vast beauty and mystery.</p>
+        </div>
+        <div class="oneQuarter" style="padding-left: 10%;">
+            <h3>support</h3>
+            <ul>
+                <li><a href="#top">Back to Top</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+                <li><a href="assets/editable/happTrailsLogo.pdf" download>Download Logo</a></li>
+            </ul>
+        </div>
+        <div class="oneQuarter">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="extraFooter">
+        <form action="#" method="post" name="subscribe">
+            <div class="header">
+                <h4>subscribe</h4>
+                <hr>
+            </div>
+            <div class="description">
+                <p>Subscribe to our newsletter for special offers and other bullshit i dunno.</p>
+            </div>
+            <div class="input">
+                <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+                <input type="submit" class="button" id="submit" value="SIGN UP">
+            </div>
+        </form>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

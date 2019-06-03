@@ -13,10 +13,23 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <style>
+        .description a {
+            text-decoration: none;
+            font-weight: 800;
+            color: black;
+            font-family: 'Ledger', serif;
+        }
+
+        .description a:hover {
+            color: #ed1c24;
+        }
     </style>
 </head>
 
 <body>
+
+    <div id="top" style="height: 1px: width: 100%; background-color: white; "></div>
+
     <div id="menuArea">
         <input type="checkbox" id="menuToggle"></input>
 
@@ -28,10 +41,12 @@
             <label for="menuToggle"></label>
             <div class="menuContent">
                 <ul>
-                    <li class="menuLogo" ><img src="assets/imgs/happyTrailsLogoWhite.png" alt="happy trails logo"></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">best trails</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="menuLogo"><a href="index.html"><img src="assets/imgs/happyTrailsLogoWhite.png" alt="happy trails logo"></a></li>
+                    <li><a href="trails.html">top trails</a></li>
+                    <li><a href="cloudsrest.html">clouds rest</a></li>
+                    <li><a href="glacierpoint.html">glacier point</a></li>
+                    <li><a href="halfdown.html">half down</a></li>
+                    <li><a href="vernalfalls.html">vernal falls</a></li>
                 </ul>
             </div>
         </div>
@@ -49,50 +64,45 @@
         <div class="twoThird main">
             <div class="homeContent">
                 <div class="oneWhole">
-                    <h2>section one</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nulla repellat optio, cumque ullam molestiae tempore perferendis ipsa adipisci vero, maxime saepe consectetur alias excepturi veritatis asperiores, a pariatur ducimus.</p>
+                    <h2>happy trails!</h2>
+                    <p>Happy trails searches for the best hiking experiences across the country from east to west! Our goal is the build a natonwide community of adventures that would like to share their journeys, stories and memories with other travelers. The world is a large place and no one should miss out in all its vast beauty and mystery.</p>
                 </div>
                 <div class="oneHalf">
-                    <h2>section two</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dolorem quidem pariatur porro obcaecati explicabo. Voluptates sit in laudantium pariatur, perferendis alias cum id dolorum, dolores enim doloremque, minima earum.</p>
+                    <h2>our favorite trails</h2>
+                    <p class="description">Please take a look at some of our favorite trails we have visited. <a href="cloudsrest.html">Clouds Rest</a>, <a href="halfdown.html">Half Dome</a>, <a href="glacierpoint.html">Glacier Point</a>, and <a href="vernalfalls.html">Vernal Falls</a>. Each of these paths has its own unique story. Some more difficult than others. We provides descriptions of each trail with a few highlights to help hikers pick their next adventure.</p>
                 </div>
                 <div class="oneHalf">
-                    <h2>section three</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni mollitia, quod consectetur excepturi aut libero fugiat ex quidem, maxime dicta voluptatem magnam quo nulla sunt possimus qui eveniet laudantium atque!</p>
+                    <h2>gear & equipment</h2>
+                    <p>Happy Trails is launching their own gear and equipment soon on our online store. Make sure to subscibe to our email listing to find out when they are released and to get special deals on our custom gear. Subscribers will be the first to know when new trails are found and the best way to experience them. You can subscribe by entering your email at the bottom of each page. HAPPY TRAILS!</p>
                 </div>
             </div>
         </div>
         <div class="oneThird sidebar">
             <div id="scrollEvents">
-                <img src="assets/imgs/socialPost.png" class="event-animate" />
-                <img src="assets/imgs/socialPost.png" class="event-animate" />
-                <img src="assets/imgs/socialPost.png" class="event-animate" />
+                <img src="assets/imgs/scroll.jpg" class="event-animate" />
             </div>
-            <br>
-            <hr>
-            <br>
         </div>
     </div>
 
     <div class="mainFooter">
         <div class="oneHalf" style="padding-left: 10%;">
             <h3>about happy trails</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vel, in sed praesentium provident molestiae asperiores odio sint laudantium! Quo voluptatibus neque soluta illum unde magni temporibus nemo repellendus nisi.</p>
+            <p>Happy trails searches for the best hiking experiences across the country from east to west! Our goal is the build a natonwide community of adventures that would like to share their journeys, stories and memories with other travelers. The world is a large place and no one should miss out in all its vast beauty and mystery.</p>
         </div>
         <div class="oneQuarter" style="padding-left: 10%;">
             <h3>support</h3>
             <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Join Our Team</a></li>
-                <li><a href="" download>Download Support Guide</a></li>
+                <li><a href="#top">Back to Top</a></li>
+                <li><a href="contact.html">Contact Info</a></li>
+                <li><a href="assets/editable/happTrailsLogo.pdf" download>Download Logo</a></li>
             </ul>
         </div>
         <div class="oneQuarter">
             <h3>Social Media</h3>
             <ul>
-                <li><a href="" target="_blank">Facebook</a></li>
-                <li><a href="" target="_blank">Instagram</a></li>
-                <li><a href="" target="_blank">Twitter</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
             </ul>
         </div>
     </div>
@@ -113,30 +123,5 @@
         </form>
     </div>
 
-    <script>
-        var slides = document.querySelectorAll('#container-slides .slide');
-        var currentSlide = 0;
-        var slideInterval = setInterval(nextSlide, 5000);
-
-        function nextSlide() {
-            slides[currentSlide].className = 'slide';
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].className = 'slide showing';
-        }
-
-        function init() {
-            var div = document.getElementById("scrollEvents");
-
-            // increase the scroll position by 10 px every 10th of a second
-            var original = div.scrollTop; //save the original position
-            setInterval(function() {
-                // make sure it's not at the bottom
-                if (div.scrollTop < div.scrollHeight - div.clientHeight)
-                    div.scrollTop += 217; // move down one image
-                else //if it's at the bottom
-                    div.scrollTop = original; //reset to the orignal height 
-            }, 4000); // 3 second intervals between change
-        }
-        window.onload = init();
-    </script>
+    <script src="javascript/script.js"></script>
 </body></html>
